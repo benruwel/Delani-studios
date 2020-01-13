@@ -68,11 +68,16 @@ body{
     padding-bottom: 20px;
 }
 div.portfolio>img{
-
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    padding: 0 0 4rem 0
 }
 .portfolio-images{
-    column-gap: 10px;
-    max-height: 30px;
+    
+    margin-left: 0px;
+    
+
 }
 .port-text{
     color: grey;
