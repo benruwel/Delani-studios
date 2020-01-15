@@ -24,6 +24,9 @@ body{
 .scroll-down{
     padding-top: 190px;
 }
+.scroll-down:hover{
+    opacity: .5;
+}
 .hero-text, .about-us, .services-text, .what-we-do, .work-text, .port-text, .forms, .contact-info{
     font-family: 'Muli', sans-serif;
 }
@@ -77,6 +80,9 @@ div.portfolio>img{
     object-fit: scale-down;
     padding: 10px;
     margin: 0px;
+}
+div.portfolio>img:hover{
+    opacity: .7;
 }
 .portfolio-images{
     text-align: center;

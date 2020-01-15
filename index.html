@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="main.css">
     <link href="https://fonts.googleapis.com/css?family=Muli:300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="main.js"></script>
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Delani Studios</title>
 </head>
@@ -17,10 +19,12 @@
             <h1>WELCOME<br> TO DELANI STUDIOS</h1>
             <p>AMAZING PEOPLE ARE MAKING AMAZING IDEAS IN A FUN ENVIRONMENT</p>
         </div>
-        <div class="scroll-down"><img src="assets\mouse_click.png" alt="Scroll down"></div>
+        <div class="scroll-down">
+            <img src="assets\mouse_click.png" alt="Scroll down">
+        </div>
     </div>
 <!--About banner-->
-    <div class="container-fluid about-us bg">
+    <div class="container-fluid about-us bg" id="scroll-to">
         <h4><b>ABOUT US</b></h4>
         <p>When you work with us, you are part of a team of committed collaborators.<br>
         All aspects of our software development process are integrated, iterative and agile</p>
@@ -55,7 +59,7 @@
             <div class="col-md-4">
                 <img src="assets\services_icons\dev_icon.png" alt="development_icon" class="img-icon">
                 <h4 class="text"><b>DEVELOPMENT</b></h4>
-                <p>All engineers are fluent in the laportfolio-images entreprise, mobile and web development technologies.<br>
+                <p>All engineers are fluent in the latest entreprise, mobile and web development technologies.<br>
                 They collaborate with your team to write, portfolio-images, and improve code on daily basis,
                 using proven<br> practices such as portfolio-images-driven development and pairng programing</p>
             </div>
@@ -89,13 +93,13 @@
     <div class="contact-us container-fluid">
         <p><h4><b style="color: white;">CONTACT US</b></h4></p>
         <div>
-            <form action="" class="forms">
+            <form action="" class="forms" autocomplete="on">
                 <input type="text" placeholder="Name..." required>
                 <input type="email" placeholder="Email..." required>
             </form>
         </div>
         <div>
-            <form action="" class="forms">
+            <form action="" class="forms" autocomplete="on">
                 <textarea  id="opinion" cols="100" rows="5" placeholder="Your message here" name="message"></textarea>
             </form>
         </div>
