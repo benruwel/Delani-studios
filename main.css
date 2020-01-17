@@ -12,9 +12,6 @@ body{
     background-repeat: no-repeat;
     position: relative;
     color: white;
-    padding: 0px;
-    margin: 0px;
-    border: none;
     font-size: 20px;
 }
 .hero-text{
@@ -99,7 +96,7 @@ div.portfolio>img:hover{
 .contact-us{
     background-image: url(assets/backgrounds/c_image.jpg);
     text-align: center;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     position: relative;
     height: 480px;
@@ -122,17 +119,16 @@ input[type=text]:focus, input[type=email]:focus, textarea:focus{
     font-size: 16px;
 }
 input[type=text]{
-    position: absolute;
-    left: 270px;
+    position: relative;
+    left: -60px;
 }
 input[type=email]{
-    position: absolute;
-    right: 250px;
+    position: relative;
+    right: -60px;
 }
 textarea{
-    position: absolute;
-    top: 200px;
-    right: 250px;
+    position: relative;
+
 }
 .contact-info{
     text-align: center;
