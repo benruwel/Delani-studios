@@ -1,15 +1,15 @@
 body{
-    margin: 0px;
-    padding: 0px;
+    margin: auto;
+    padding: auto;
 }
 .hero{
     background-image: url(assets/backgrounds/h_img.jpg);
     background-color: rgb(180, 132, 84);
     height: 690px;
     width: 100%;
+    background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
-    background-repeat: no-repeat;
     position: relative;
     color: white;
     font-size: 20px;
@@ -19,7 +19,13 @@ body{
     
 }
 .scroll-down{
+    position: relative;
     padding-top: 190px;
+}
+@media screen and (max-width:400px){
+    .scroll-down{
+        padding-top: 100px;
+    }
 }
 .scroll-down:hover{
     opacity: .5;
@@ -70,22 +76,46 @@ body{
     padding-top: 30px;
     padding-bottom: 20px;
 }
+.portfolio{
+    float: none;
+    display: inline-block;
+    text-align: center;    
+    margin-right: auto;
+    margin-top: auto;
+    padding-bottom: 0px;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+.portfolio2{
+    float: none;
+    display: inline-block;
+    text-align: center;    
+    margin-right: 5px;
+    margin-top: 5px;
+    padding-bottom: 0px;
+}
 
-div.portfolio>img{
-    width: 200px;
-    height: 200px;
+div.portfolio>img, .portfolio2>img{
+    position: relative;
+    width: 150px;
+    height: 150px;
     object-fit: scale-down;
-    padding: 10px;
-    margin: 0px;
+    padding: 5px;
+    margin: 0 0;
+    box-sizing: content-box;
 }
 div.portfolio>img:hover{
     opacity: .7;
 }
 .portfolio-images{
+    display: inline-block;
     text-align: center;
-    position: relative;
-    padding-left: 250px;
-    padding-bottom: 0px;
+    padding-left: 330px;
+}
+.portfolio-images::after{
+    content: "";
+    display: table;
+    clear: both;
 }
 .port-text{
     color: grey;
@@ -93,9 +123,29 @@ div.portfolio>img:hover{
     font-size: 13px;
     padding-bottom: 20px;
 }
+.portf{
+    padding-bottom: 80px;
+}
+@media screen and (max-width: 600px){
+    .portfolio, .portfolio2{
+        width: 100%;
+    }
+    .portfolio-images{
+        padding-left: 0px;
+    }
+}
+@media screen and (max-width: 1100px){
+    .portfolio, .portfolio2{
+        width: 100%;
+    }
+    .portfolio-images{
+        padding-left: 0px;
+    }
+}
 .contact-us{
     background-image: url(assets/backgrounds/c_image.jpg);
     text-align: center;
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
@@ -110,6 +160,7 @@ input[type=text], input[type=email], textarea{
     border-style: solid;
     color: white;
     padding: 5px;
+    font-family: 'Muli', sans-serif;
 }
 input[type=text]:focus, input[type=email]:focus, textarea:focus{
     outline: none;
@@ -120,15 +171,51 @@ input[type=text]:focus, input[type=email]:focus, textarea:focus{
 }
 input[type=text]{
     position: relative;
-    left: -60px;
+    margin-right: 210px;
+}
+form.forms.row{
+    margin: 0;
+    color: white;
 }
 input[type=email]{
     position: relative;
-    right: -60px;
+    
 }
-textarea{
-    position: relative;
 
+.txtarea{
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    position: relative;
+    padding-top: 20px;
+    padding-left: 350px;
+}
+.fill-in{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    padding: 15px;
+    position: relative;
+    padding-left: 350px;
+}
+@media screen and (max-width:800px){
+    form.fill-in{
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        position: relative;
+        padding: 0;
+    }
+    form.txtarea{
+        display: flex;
+        position: relative;
+        padding: 0px;
+        max-width: 200px;
+    }
+    input[type=text], input[type=email]{
+        padding-bottom: 0px;
+    }
 }
 .contact-info{
     text-align: center;
